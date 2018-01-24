@@ -49,11 +49,10 @@ Util.combination = function(n, r) {
  */
 Util.isPrime = function(n) {
 	var sqrt = Math.sqrt(n);
-	if (n == 2) return true;
+	
+	if (n == 2)          { return true; }
+	else if(n % 2 == 0)  { return false; }
 
-	else if(n % 2 == 0) {
-		return false;
-	}
 	for(var i = 3; i < sqrt; i+=2) {
 		if(n % i == 0) {
 			return false;
