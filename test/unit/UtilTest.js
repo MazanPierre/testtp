@@ -13,7 +13,7 @@ describe('factoriel testing', function() {
 	});
 });
 
-describe('arrangement testing, function() {
+describe('arrangement testing', function() {
 	it('test OK arrangement', function() {
 		var a = [[7, 10, 604800]]  
 	});
