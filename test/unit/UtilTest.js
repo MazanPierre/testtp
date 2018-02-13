@@ -1,4 +1,5 @@
 
+
 describe('factoriel testing', function() {
 
 	it('test OK factorial', function() {
@@ -13,8 +14,11 @@ describe('factoriel testing', function() {
 	});
 });
 
-describe('arrangement testing, function() {
+describe('arrangement testing', function() {
 	it('test OK arrangement', function() {
-		var a = [[7, 10, 604800]]  
+		var a = [[4, 3, 24], [3, 2, 6]];  
+		for(var i = 0; i < a.length; i++) {
+			expect(Util.arrangement(a[i][0], a[i][1])).toEqual(a[i][2]);
+		}
 	});
 });

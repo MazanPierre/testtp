@@ -1,15 +1,15 @@
-describe('salut pierre', function() {
+describe('test unit getting started', function() {
 	function foo() {
 		throw 'welcome';
 	}
 
-	it('michel est parti dormir', function() {
+	it('moi equal moi', function() {
 		expect('moi').toBe('moi');
 	});
-	it('remi regarde l\'écran', function() {
+	it('remi not equal michel', function() {
 		expect('remi').not.toBe('michel');
 	});
-	it('younes a qu\'un seul S', function() {
+	it('foo expected to throw', function() {
 		expect(foo).toThrow();
 	});
 });

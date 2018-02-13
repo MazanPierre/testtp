@@ -36,7 +36,7 @@ Util.arrangement = function(n, r) {
  * @returns {number}
  */
 Util.combination = function(n, r) {
-	return(Util.factorial(n)/(Util.factorial(n-r)*Util.factorial(r))
+	return (Util.factorial(n)*Util.factorial(r)/(Util.factorial(n-r)));
 };
 
 /**
@@ -71,10 +71,11 @@ Util.isPrime = function(n) {
  * @returns {number}
  */
 Util.sumPrime = function(n) {
-	if(n<2) return -1;
-	else {
+	if (n<2) {
+		return -1;
+	} else {
 		var cpt = 2;
-		for(int i=3; i<i+1; i++){
+		for(var i=3; i<i+1; i++){
 			if (Util.isPrime(i)) cpt += i;
 		}
 		return cpt;
